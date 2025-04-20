@@ -58,13 +58,18 @@ a {
     transition: color var(--transition-duration) var(--transition-easing);
 }
 
+.filled-img{
+    object-fit: cover !important;
+    height: 100% !important;
+}
+
 a:hover {
     color: var(--text-hover);
 }
   
 header {
     background-color: var(--light-background-color);
-    padding: 56px 0;
+    padding: 64px 0;
 
     h1{
         font-size: 66px;
@@ -82,7 +87,7 @@ header {
     }
 
     img{
-        width: 75% !important;
+        width: 90% !important;
     }
 
 }
