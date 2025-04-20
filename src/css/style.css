@@ -53,9 +53,13 @@ h4, h5, h6 {
 }
   
 a {
-    color: var(--accent-color);
+    color: var(--text-dark);
     text-decoration: none;
     transition: color var(--transition-duration) var(--transition-easing);
+}
+
+a:hover {
+    color: var(--text-hover);
 }
   
 header {
@@ -75,6 +79,10 @@ header {
         font-size: 20px;
         margin: var(--spacing-lg) auto;
         line-height: 1.8;
+    }
+
+    img{
+        width: 75% !important;
     }
 
 }
@@ -154,12 +162,83 @@ h2 {
     color: var(--text-dark);
 }
   
-footer {
-    background-color: var(--secondary-color);
-    color: var(--light-text-color);
-    text-align: center;
-    padding: var(--spacing-md);
-    font-size: 0.9rem;
+#certificationsScrollMain{
+    overflow: hidden;
+    user-select: none;
+  
+    --gap: 20px;
+    gap: var(--gap);
+}
+
+.cert-scroll-container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);  
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+.cert-image {
+    display: inline-block;
+    width: 140px; /* Adjust width as needed */
+    margin-right: 30px; /* Adjust spacing as needed */
+}
+
+.cert-scroll-container img:last-child {
+    margin-right: 0;
+}
+
+#services {
+    img{
+        object-fit: cover;
+    }
+
+    h3{
+        transition: color 0.3s ease-in-out;
+    }
+
+    h3:hover{
+        color: var(--text-hover) !important;
+    }
+    
+    .col-md-4 img {
+        transition: filter 0.27s ease-in-out; /* Smooth transition for the filter */
+        filter: brightness(100%); /* Initial brightness (no darkening) */
+    }
+    
+    .col-md-4:hover img {
+        filter: brightness(60%); /* Reduce brightness to darken on hover */
+    }
+}
+
+#why-hire{
+
+    img{
+        object-fit: cover;
+    }
+
+    ul{
+        line-height: 2;
+        font-size: 19px;
+
+        li::marker {
+            content: '✔   ';
+        }
+    }
+
+}
+
+#why-choose-us{
+    background: var(--light-background-color);
+}
+
+section {
+    padding: 64px 0;
 }
 
 /* Media Queries */
@@ -198,6 +277,10 @@ footer {
         #hero-text {
             margin-bottom: 32px;
         }
+
+        img{
+            width: 395px !important;
+        }
     }
 
     #btn-cta-quote, #btn-cta-more {
@@ -207,6 +290,35 @@ footer {
 
     .cert-image {
         width: 100px; /* Adjust width as needed */
+    }
+
+    #why-hire{
+        h2{
+            margin-top: 32px;
+        }
+
+        ul{
+            font-size: 16px;
+
+            li::marker {
+                content: '✔  ';
+            }
+        }
+    }
+
+    #sub-footer{
+        border-bottom: 1px solid var(--border-color);
+    
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 2;
+        }
+        
+
+    
+    
     }
 }
   
@@ -232,33 +344,38 @@ footer {
     }
 }
 
-#certificationsScrollMain{
-    overflow: hidden;
-    user-select: none;
-  
-    --gap: 20px;
-    gap: var(--gap);
-}
+#sub-footer{
+    background-color: var(--light-background-color);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border-color);
 
-.cert-scroll-container {
-    display: flex;
-    justify-content: space-between;
-    gap: var(--gap);  
-    animation: scroll 20s linear infinite;
-}
-
-@keyframes scroll {
-    to {
-      transform: translateX(calc(-100% - var(--gap)));
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        line-height: 2;
     }
-  }
-  
-.cert-image {
-    display: inline-block;
-    width: 140px; /* Adjust width as needed */
-    margin-right: 30px; /* Adjust spacing as needed */
+
+    p{
+        margin-bottom: 0;
+    }
+
+
 }
 
-.cert-scroll-container img:last-child {
-    margin-right: 0;
+footer {
+    background-color: var(--light-background-color);
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px 0;
+
+    p{
+        margin-bottom: 0;
+    }
+
+    .bi{
+        color: var(--text-dark)
+    }
 }
