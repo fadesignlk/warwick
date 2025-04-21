@@ -93,6 +93,23 @@ header {
 
 }
 
+.navbar {
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    /* Add any other existing navbar styles here */
+    background-color: #f8f9fa; /* Ensure a background color */
+    /* Remove or adjust any margin-bottom that might be present */
+    margin-bottom: 0;
+}
+
+
+header, #breadcrumb { /* Replace with the actual ID or class of your hero section */
+    margin-top: 75px; /* Adjust this value to be the height of your navbar */
+}
+
 button.navbar-toggler {
     border-radius: 0;
     border : 0;
