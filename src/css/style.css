@@ -99,9 +99,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000; /* Ensure it's above other content */
-    /* Add any other existing navbar styles here */
-    background-color: #f8f9fa; /* Ensure a background color */
-    /* Remove or adjust any margin-bottom that might be present */
+    background-color: var(--text-white); /* Background color */
     margin-bottom: 0;
 }
 
