@@ -472,6 +472,12 @@ footer {
         gap: var(--spacing-xsm);
     }
 
+    .navbar {
+        #btn-cta-call{
+            margin-bottom: var(--spacing-md);
+        }
+    }
+
     .container {
         width: 93%;
     }
