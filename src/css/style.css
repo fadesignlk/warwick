@@ -330,6 +330,15 @@ section {
     }
 }
 
+.accordion-button:not(.collapsed) {
+    color: var(--text-white) !important;
+    background-color: var(--text-dark) !important;
+    border: 1px solid var(--border-color) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
 
 
 /* Media Queries */

@@ -49,74 +49,102 @@
     </nav>
 
     <!-- Breadcrumb with overlay background image -->
-    <section id="breadcrumb" class="bg-image" style="background-image: url('src/img/home/service3.jpeg');">
+    <section id="breadcrumb" class="bg-image" style="background-image: url('src/img/home/service5.jpg');">
         <div class="container text-center">
-            <h2>Contact Us</h2>
+            <h2>About Us</h2>
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                  <li class="breadcrumb-item active" aria-current="page">About Us</li>
                 </ol>
             </nav>
         </div>
-    </section>
-
-    <!-- Get in touch with us with a submission form  -->
-    <section id="contact-form">
+    </section>        
+    
+    <!-- About Warwick CCS -->
+    <section id="about" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6" id="contact-form-left">
-                    <h2>Get in touch with us</h2>
-                    <p>If you have any questions or would like to book a service, please fill out the form below and we will get back to you as soon as possible.</p>
-                    <form action="#" method="post" >
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2>About Warwick Carpet Cleaners</h2>
+                    <p>Warwick Carpet Cleaners is a local, independent company that provides a professional carpet cleaning service throughout the Warwickshire region. We are fully insured and all our work is guaranteed. We are also members of the National Carpet Cleaners Association (NCCA).</p>
+                    <p>We use the latest equipment and techniques to ensure that your carpets are cleaned to the highest standard. Our team of fully trained specialists are dedicated to providing you with the best possible service.</p>
+                    <p>We understand that your carpets are an important part of your home, and we take great care to ensure that they are cleaned safely and effectively. We use only the best products and equipment to ensure that your carpets are left looking and smelling fresh.</p>
+                    <p>Whether you need a one-off clean or a regular service, we can help. Contact us today to find out more about our services.</p>
                 </div>
-                <div class="col-md-6 pt-5 pt-md-0">
-                    <h3>Contact Information</h3>
-                    <p>If you prefer to contact us directly, please use the information below:</p>
-                    <ul class="list-unstyled contact-info">
-                        <li><i class="bi bi-house-door"></i> 6 Elm Close, Southam, Warwickshire CV47 1HT</li>
-                        <li><i class="bi bi-envelope "></i> mail@warwickcleaners.co.uk</li>
-                        <li><i class="bi bi-telephone"></i> 01926 614 781</li>
-                        <li><i class="bi bi-clock"></i> Mon - Fri: 9:00 AM - 5:00 PM</li>
-                        <li><i class="bi bi-clock"></i> Sat: 10:00 AM - 2:00 PM</li>
-                        <li><i class="bi bi-clock"></i> Sun: Closed</li>
-                    </ul>
-                    <h3 class="pt-4 pt-md-0">Follow Us</h3>
-                    <p>Stay connected with us on social media:</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/warwick.cleaners"><i class="bi bi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Google Maps -->
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <h3 class="mb-3">Find Us Here</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9770.564903648361!2d-1.392827!3d52.2499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487730c08452ff1d%3A0xfe7f516283b15ac0!2s6%20Elm%20Cl%2C%20Southam%20CV47%201HT!5e0!3m2!1sen!2suk!4v1745234553647!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="col-md-6 align-self-stretch">
+                    <img src="src/img/home/service5.jpg" alt="About Us" class="img-fluid rounded-4 filled-img">
                 </div>
             </div>
         </div>
     </section>
-                    
+
+    <!-- Faq -->
+    <section id="faq" class="bg-light">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is the best way to clean carpets?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The best way to clean carpets is to use a professional carpet cleaning service. We use the latest equipment and techniques to ensure that your carpets are cleaned to the highest standard.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How often should I have my carpets cleaned?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            It is recommended to have your carpets cleaned at least once a year, but this can vary depending on the amount of foot traffic and usage.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you use eco-friendly products?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we use eco-friendly products that are safe for your family and pets.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How long does it take for carpets to dry after cleaning?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Drying times can vary, but typically carpets will be dry within 2-4 hours after cleaning.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in touch with us  -->
+    <section id="contact">
+        <div class="container text-center">
+            <h2>Get in Touch with Us</h2>
+            <p>Book an appointment with one of our carpet cleaning specialists now by giving us a call on 01926 614 781 or by filling in the below form.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
     
     <!-- Sub Footer -->
     <section id="sub-footer">
