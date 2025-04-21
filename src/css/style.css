@@ -21,6 +21,7 @@
     --line-height: 1.5;
   
     /* Spacing */
+    --spacing-xsm: 0.2rem;
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 1.5rem;
@@ -102,8 +103,34 @@ button.navbar-toggler:focus {
     box-shadow: none ;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+.navbar-toggler .navbar-toggler-icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative; /* For positioning the lines */
+    background: none; /* Remove default background image */
+    border: none; /* Remove default border */
+}
+
+.navbar-toggler .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-dark); /* Adjust color */
+    margin: 0.3rem auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) .line:nth-child(1) {
+    transform: translateY(0.45rem) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .line:nth-child(3) {
+    transform: translateY(-0.45rem) rotate(-45deg);
 }
   
 nav ul {
@@ -425,7 +452,7 @@ footer {
 /* Targeting typical mobile phone widths (up to ~599px) */
 @media (max-width: 599px) {    
     nav ul {
-        gap: var(--spacing-sm);
+        gap: var(--spacing-xsm);
     }
 
     .container {
