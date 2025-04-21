@@ -10,8 +10,12 @@
     <meta property="article:modified_time" content="2025-04-25T10:03:02+00:00" />	
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="src/css/style.css">
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -37,7 +41,7 @@
                         <a class="nav-link" href="areas.html">Covering Areas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
                 <div>
@@ -171,6 +175,41 @@
         </div>
     </section>
 
+    <!-- Client Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="text-center">What Our Clients Say</h2>
+            <div class="swiper mySwiper pt-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"The team at Warwick Carpet Cleaners did an amazing job on my carpets. They look brand new!"</p>
+                        <h5>- Sarah J.</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"I was impressed with their professionalism and the results were fantastic. Highly recommend!"</p>
+                        <h5>- Mark T.</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"Great service! My rugs have never looked better. Will definitely use them again."</p>
+                        <h5>- Emma L.</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"I had a tough stain on my carpet and they managed to remove it completely. Very happy!"</p>
+                        <h5>- John D.</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"The team was friendly and efficient. I couldn't ask for a better service!"</p>
+                        <h5>- Lisa M.</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"I was amazed at how quickly they cleaned my carpets. Excellent service!"</p>
+                        <h5>- Tom R.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Get in touch with us  -->
     <section id="contact">
         <div class="container text-center">
@@ -196,7 +235,7 @@
                                 <li><a href="services.html">Our Services</a></li>
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="areas.html">Covering Areas</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="blog.html">Blog</a></li>
                                 <li><a href="#">Privacy Policy</a></li>                                                        
                             </ul>
                         </div>
@@ -235,6 +274,39 @@
             </div>
         </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>

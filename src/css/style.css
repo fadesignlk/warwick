@@ -313,6 +313,10 @@ section {
     color: var(--text-dark); 
 }
 
+/* get in touch section */
+
+
+/* Contact Page */
 #contact-form{
     .contact-info{
         li{
@@ -336,6 +340,21 @@ section {
     border: 1px solid var(--border-color) !important;
     outline: none !important;
     box-shadow: none !important;
+}
+
+/* Testimonails */
+#testimonials {
+    .swiper-slide{
+        background-color: var(--light-background-color);
+        height: 160px;
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-radius: var(--border-radius);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
 
 
@@ -365,6 +384,41 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
 }
 
+#sub-footer{
+    background-color: var(--light-background-color);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border-color);
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        line-height: 2;
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+
+
+}
+
+footer {
+    background-color: var(--light-background-color);
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px 0;
+
+    p{
+        margin-bottom: 0;
+    }
+
+    .bi{
+        color: var(--text-dark)
+    }
+}
 
 /* Media Queries */
 
@@ -477,41 +531,5 @@ section {
 @media (min-width: 992px) {
     .container {
         width: 80%;
-    }
-}
-
-#sub-footer{
-    background-color: var(--light-background-color);
-    color: var(--text-dark);
-    font-size: 0.9rem;
-    border-bottom: 1px solid var(--border-color);
-
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        line-height: 2;
-    }
-
-    p{
-        margin-bottom: 0;
-    }
-
-
-}
-
-footer {
-    background-color: var(--light-background-color);
-    color: var(--text-dark);
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 20px 0;
-
-    p{
-        margin-bottom: 0;
-    }
-
-    .bi{
-        color: var(--text-dark)
     }
 }
